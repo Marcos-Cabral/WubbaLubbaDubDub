@@ -1,0 +1,10 @@
+.btn{
+    background-color:#92f436 !important;
+    color: black;
+    border: none;
+    border-radius: 0%;
+}
+.f-end{
+    display: flex;
+    justify-content: flex-end;
+}

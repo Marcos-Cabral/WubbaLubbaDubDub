@@ -1,0 +1,13 @@
+.btn{
+    background-color:#92f436 !important;
+    color: black;
+    border: none;
+    border-radius: 0%;
+}
+.bg-mees{
+    background-image: url('../../../../assets/mees.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    background-size: auto;
+}

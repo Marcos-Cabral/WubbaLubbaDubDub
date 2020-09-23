@@ -1,0 +1,10 @@
+<form class="form-group mt-3" [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+    <div class="row">
+        <div class="col-md-8">
+            <input class="form-control" id="name" type="text" formControlName="name" placeholder="Buscar un personaje...">
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-block" type="submit">Buscar</button>
+        </div>
+    </div>
+</form>

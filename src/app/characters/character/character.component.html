@@ -1,0 +1,13 @@
+<div class="card" style="margin: 0 auto;">
+    <img class="card-img-top" src="{{character.image}}" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">{{character.name}}</h5>
+        <h6 *ngIf="character.origin.name!='unknown'">
+            {{character.origin.name}}
+        </h6>
+        <h6 *ngIf="character.origin.name=='unknown'"><br></h6>
+        <p class="card-text">{{character.species}}</p>
+        <p class="card-text">{{character.gender}}</p>
+        <a [routerLink]="['/character',character.id]" class="btn btn-primary">Ver personaje</a>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+.card{
+    border: none;
+}
+.pares:nth-child(even) .card{
+    background: #00b0c8;
+    color: white;
+}
+.pares:nth-child(even) .card .card-body h6,.pares:nth-child(even) .card .card-body p{
+    color: white;
+}
+.pares:nth-child(even) .card .card-body a.btn{
+    background-color:#a1fd8d !important;
+    border-radius: 0%;
+    color: black;
+    font-weight: bold;
+}
+.pares:nth-child(odd) .card .card-body a.btn{
+    background-color:#00b0c8 !important;
+    border-radius: 0%;
+    color: white;
+    font-weight: bold;
+}
+.pares:nth-child(odd) .card{
+    background-color: #a1fd8d;
+    font-weight: bold;
+}

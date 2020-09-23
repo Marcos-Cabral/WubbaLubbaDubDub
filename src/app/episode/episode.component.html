@@ -1,0 +1,28 @@
+<div class="container bg-light pt-3 pb-4" *ngIf="episodes">
+   <h6 class="text-center p-3">Lista de episodios</h6>
+   <div class="row">
+      <div class="col-md-4" *ngFor="let episode of episodes">
+         <div class="card border-info mb-3">
+            <div class="card-header bg-transparent border-info">{{episode.episode}}</div>
+            <div class="card-body">
+               <h5 class="card-title">{{episode.name}}</h5>
+               <p class="card-text">Lanzado al aire: {{episode.air_date}}</p>
+               <a class="btn" [routerLink]="['/characters-episodes',episode.id]">Personajes del episodio</a>
+            </div>
+            <div class="card-footer bg-transparent border-info">Creado en: {{episode.created}}</div>
+         </div>
+      </div>
+     </div>
+</div>
+
+<style>
+   h5.card-title{
+      color: #00b0c8 !important;
+   }
+   .btn{
+    background-color:#92f436 !important;
+    color: black;
+    border: none;
+    border-radius: 0%;
+}
+</style>

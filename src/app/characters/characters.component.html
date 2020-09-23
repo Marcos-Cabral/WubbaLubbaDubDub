@@ -1,0 +1,22 @@
+<div class="container bg-light pt-2 pb-4">
+    <app-search></app-search>
+    <div class="row">
+        <div class="container pb-5" *ngIf="error">
+            <div class="row f-error">    
+                <div class="col-md-6">
+                    <img src="../../assets/explotando.gif" alt="" width="100%">
+                </div>
+                <div class="col-md-6">
+                    <h6>No me vas a creer, porque casi nunca pasa, pero cometí un error. -Rick</h6>
+                    <span>{{error}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mt-3 text-center" *ngFor="let character of AllCharacters">
+            <app-character [character] = "character">
+                
+            </app-character>
+        </div>
+    </div>
+</div>
+

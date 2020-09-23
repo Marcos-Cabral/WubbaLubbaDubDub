@@ -1,0 +1,18 @@
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.container .navbar-brand{
+    color: #ffffff !important;
+}
+.navbar-brand{
+    display: flex;
+    align-items: center;
+}
+.navbar{
+    background-color: rgba(145, 244, 55,0.2) !important;
+    /*background-color: rgba(0, 0, 0,0) !important;*/
+}
+.active-btn{
+    border-bottom:1px ridge #aad2e9;
+}
